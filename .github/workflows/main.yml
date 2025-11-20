@@ -196,7 +196,6 @@ jobs:
 
       - name: Clone YTUHD
         if: ${{ inputs.enable_ytuhd }}
-        uses: actions/checkout@v4.1.7
         run: |
           cd ${{ github.workspace }}
           git clone --quiet https://github.com/Tonwalter888/YTUHD.git
